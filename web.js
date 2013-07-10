@@ -9,7 +9,7 @@ var fileIn = fs.readFileSync('index.html');
 
 app.get('/', function(request, response) {
 
-  response.send('Hello World 4!' + fileIn.toString());
+  response.send(fileIn.toString());
 
 });
 

@@ -2,9 +2,13 @@ var express = require('express');
 
 var app = express.createServer(express.logger());
 
+var fileIn = fs.readFileSync('index.html');
+
+//var bufferOut = fileIn. 
+
 app.get('/', function(request, response) {
 
-  response.send('Hello World 4!');
+  response.send('Hello World 4!' + fileIn.toString());
 
 });
 
